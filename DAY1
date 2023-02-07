@@ -1,0 +1,13 @@
+# Input names from the user
+names = []
+while True:
+    name = input("Enter a name (enter 'done' to stop): ")
+    if name == "done":
+        break
+    names.append(name)
+order = input("Sort in ascending or descending order? (Enter 'Ascending' or 'Descending'): ")
+if order == "Ascending":
+    sorted_names = sorted(names)
+else:
+    sorted_names = sorted(names, reverse=True)
+print("Sorted names:", sorted_names)
